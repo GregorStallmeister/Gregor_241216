@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gregor_241216", "Gregor_241216\Gregor_241216.csproj", "{4382D787-EB3C-423A-B53B-AFBA7588CD4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{937021FA-6A98-442A-8922-2A152303C7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatenAnbindungEinfach", "DatenAnbindungEinfach\DatenAnbindungEinfach.csproj", "{FE2652BE-E2BE-42C6-B227-6564028FA4BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4382D787-EB3C-423A-B53B-AFBA7588CD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4382D787-EB3C-423A-B53B-AFBA7588CD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4382D787-EB3C-423A-B53B-AFBA7588CD4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937021FA-6A98-442A-8922-2A152303C7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937021FA-6A98-442A-8922-2A152303C7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937021FA-6A98-442A-8922-2A152303C7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937021FA-6A98-442A-8922-2A152303C7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2652BE-E2BE-42C6-B227-6564028FA4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2652BE-E2BE-42C6-B227-6564028FA4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2652BE-E2BE-42C6-B227-6564028FA4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2652BE-E2BE-42C6-B227-6564028FA4BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

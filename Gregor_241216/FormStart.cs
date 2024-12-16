@@ -1,10 +1,18 @@
+using Project = DatenAnbindungEinfach;
+
 namespace Gregor_241216
 {
     public partial class Startfenster : Form
     {
+        private DatenAnbindungEinfach.Datenanbindung Datenanbindung;
+
         public Startfenster()
         {
             InitializeComponent();
+
+            this.Datenanbindung = new DatenAnbindungEinfach.Datenanbindung();
+
+            // this.Datenanbindung.HoleTexte();
         }
 
         private void ButtonKlickMich_Click(object sender, EventArgs e)
