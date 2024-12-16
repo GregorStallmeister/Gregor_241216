@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Startfenster));
             buttonKlickMich = new Button();
             label1 = new Label();
             textBoxName = new TextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonKlickMich
@@ -59,17 +62,28 @@
             textBoxName.Size = new Size(228, 27);
             textBoxName.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(532, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(256, 256);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // Startfenster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(textBoxName);
             Controls.Add(label1);
             Controls.Add(buttonKlickMich);
             Name = "Startfenster";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gregors Programm";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -79,5 +93,6 @@
         private Button buttonKlickMich;
         private Label label1;
         private TextBox textBoxName;
+        private PictureBox pictureBox1;
     }
 }
