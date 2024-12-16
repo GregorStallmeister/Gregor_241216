@@ -1,6 +1,6 @@
 ﻿namespace Gregor_241216
 {
-    partial class Starrtfenster
+    partial class Startfenster
     {
         /// <summary>
         ///  Required designer variable.
@@ -41,7 +41,7 @@
             buttonKlickMich.TabIndex = 0;
             buttonKlickMich.Text = "Klick mich!";
             buttonKlickMich.UseVisualStyleBackColor = true;
-            buttonKlickMich.Click += buttonKlickMich_Click;
+            buttonKlickMich.Click += ButtonKlickMich_Click;
             // 
             // label1
             // 
@@ -59,7 +59,7 @@
             textBoxName.Size = new Size(228, 27);
             textBoxName.TabIndex = 2;
             // 
-            // Starrtfenster
+            // Startfenster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -67,7 +67,7 @@
             Controls.Add(textBoxName);
             Controls.Add(label1);
             Controls.Add(buttonKlickMich);
-            Name = "Starrtfenster";
+            Name = "Startfenster";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gregors Programm";
             ResumeLayout(false);
