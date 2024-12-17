@@ -5,7 +5,13 @@ namespace DatenAnbindungEinfach
 {
     public class Datenanbindung : Interfaces.InterfaceDatenanbindung
     {
-        public DataSet HoleTexte()
+        private DataSet DataSetTexte;
+
+        public Datenanbindung()
+        {
+            DataSetTexte = new DataSet();
+        }
+        public void HoleTexte()
         {
             throw new NotImplementedException();
         }

@@ -33,12 +33,13 @@
             label1 = new Label();
             textBoxName = new TextBox();
             pictureBox1 = new PictureBox();
+            textBoxZitat = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonKlickMich
             // 
-            buttonKlickMich.Location = new Point(345, 12);
+            buttonKlickMich.Location = new Point(413, 12);
             buttonKlickMich.Name = "buttonKlickMich";
             buttonKlickMich.Size = new Size(94, 29);
             buttonKlickMich.TabIndex = 0;
@@ -57,13 +58,15 @@
             // 
             // textBoxName
             // 
+            textBoxName.BorderStyle = BorderStyle.FixedSingle;
             textBoxName.Location = new Point(111, 13);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(228, 27);
+            textBoxName.Size = new Size(296, 27);
             textBoxName.TabIndex = 2;
             // 
             // pictureBox1
             // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(532, 12);
             pictureBox1.Name = "pictureBox1";
@@ -71,11 +74,22 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // textBoxZitat
+            // 
+            textBoxZitat.BorderStyle = BorderStyle.FixedSingle;
+            textBoxZitat.Location = new Point(12, 60);
+            textBoxZitat.Multiline = true;
+            textBoxZitat.Name = "textBoxZitat";
+            textBoxZitat.ReadOnly = true;
+            textBoxZitat.Size = new Size(495, 208);
+            textBoxZitat.TabIndex = 4;
+            // 
             // Startfenster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBoxZitat);
             Controls.Add(pictureBox1);
             Controls.Add(textBoxName);
             Controls.Add(label1);
@@ -94,5 +108,6 @@
         private Label label1;
         private TextBox textBoxName;
         private PictureBox pictureBox1;
+        private TextBox textBoxZitat;
     }
 }

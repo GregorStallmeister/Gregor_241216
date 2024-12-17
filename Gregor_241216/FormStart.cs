@@ -10,9 +10,17 @@ namespace Gregor_241216
         {
             InitializeComponent();
 
-            this.Datenanbindung = new DatenAnbindungEinfach.Datenanbindung();
+            Datenanbindung = new DatenAnbindungEinfach.Datenanbindung();
 
-            // this.Datenanbindung.HoleTexte();
+            try
+            {
+                Datenanbindung.HoleTexte();
+            }
+            catch (Exception ex)
+            {
+                // _ = MessageBox.Show(ex.ToString());
+                textBoxZitat.Text = "Leider konnte kein Zitat geladen werden.";
+            }            
         }
 
         private void ButtonKlickMich_Click(object sender, EventArgs e)

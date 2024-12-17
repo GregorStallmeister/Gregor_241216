@@ -9,6 +9,6 @@ namespace Interfaces
 {
     public interface InterfaceDatenanbindung
     {
-        public DataSet HoleTexte();
+        public void HoleTexte();
     }
 }
