@@ -15,7 +15,7 @@ namespace DatenAnbindungEinfach
             DataTableTexte.Columns.Add("Text");
             DataTableTexte.Columns.Add("Quelle");
 
-            textePosition = 0;
+            textePosition = -1;
         }
         public void HoleTexte()
         {
@@ -35,6 +35,22 @@ namespace DatenAnbindungEinfach
                 dataRow["Quelle"] = matchCollectionAlleTexte[(i*2)+1].ToString().Replace("<td>", "").Replace("</td>", "");
 
                 DataTableTexte.Rows.Add(dataRow);
+            }
+        }
+
+        public DataRow GibNächsteZeile (Boolean zufällig)
+        {
+            if (zufällig == false)
+            {
+                textePosition++;
+                return DataTableTexte.Rows[textePosition];
+            }
+            else
+            {
+                Random random = new Random();   
+                textePosition = random.Next(0, DataTableTexte.Rows.Count - 1);
+
+                return DataTableTexte.Rows[textePosition];
             }
         }
     }

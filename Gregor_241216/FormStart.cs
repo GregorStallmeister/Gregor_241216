@@ -1,3 +1,4 @@
+using System.Data;
 using Project = DatenAnbindungEinfach;
 
 namespace Gregor_241216
@@ -15,6 +16,9 @@ namespace Gregor_241216
             try
             {
                 Datenanbindung.HoleTexte();
+
+                DataRow dataRow = Datenanbindung.GibNächsteZeile(false);
+                textBoxZitat.Text = dataRow["Text"].ToString();
             }
             catch (Exception ex)
             {

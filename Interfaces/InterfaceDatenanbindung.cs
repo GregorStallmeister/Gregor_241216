@@ -10,5 +10,7 @@ namespace Interfaces
     public interface InterfaceDatenanbindung
     {
         public void HoleTexte();
+
+        public DataRow GibNächsteZeile(Boolean zufällig);
     }
 }
