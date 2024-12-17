@@ -18,7 +18,7 @@ namespace Gregor_241216
             }
             catch (Exception ex)
             {
-                // _ = MessageBox.Show(ex.ToString());
+               _ = MessageBox.Show(ex.ToString());
                 textBoxZitat.Text = "Leider konnte kein Zitat geladen werden.";
             }            
         }
