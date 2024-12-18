@@ -42,6 +42,11 @@ namespace DatenAnbindungEinfach
         {
             if (zufällig == false)
             {
+                if (textePosition == DataTableTexte.Rows.Count - 1)
+                { 
+                    textePosition = -1;
+                }
+
                 textePosition++;
                 return DataTableTexte.Rows[textePosition];
             }

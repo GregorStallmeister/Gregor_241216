@@ -34,6 +34,9 @@
             textBoxName = new TextBox();
             pictureBox1 = new PictureBox();
             textBoxZitat = new TextBox();
+            buttonNächsterText = new Button();
+            checkBoxZufällig = new CheckBox();
+            buttonQuelle = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -81,14 +84,47 @@
             textBoxZitat.Multiline = true;
             textBoxZitat.Name = "textBoxZitat";
             textBoxZitat.ReadOnly = true;
-            textBoxZitat.Size = new Size(495, 208);
+            textBoxZitat.Size = new Size(495, 168);
             textBoxZitat.TabIndex = 4;
+            // 
+            // buttonNächsterText
+            // 
+            buttonNächsterText.Location = new Point(12, 239);
+            buttonNächsterText.Name = "buttonNächsterText";
+            buttonNächsterText.Size = new Size(112, 29);
+            buttonNächsterText.TabIndex = 5;
+            buttonNächsterText.Text = "Nächster Text";
+            buttonNächsterText.UseVisualStyleBackColor = true;
+            buttonNächsterText.Click += buttonNächsterText_Click;
+            // 
+            // checkBoxZufällig
+            // 
+            checkBoxZufällig.AutoSize = true;
+            checkBoxZufällig.Location = new Point(130, 242);
+            checkBoxZufällig.Name = "checkBoxZufällig";
+            checkBoxZufällig.Size = new Size(80, 24);
+            checkBoxZufällig.TabIndex = 6;
+            checkBoxZufällig.Text = "zufällig";
+            checkBoxZufällig.UseVisualStyleBackColor = true;
+            // 
+            // buttonQuelle
+            // 
+            buttonQuelle.Location = new Point(413, 242);
+            buttonQuelle.Name = "buttonQuelle";
+            buttonQuelle.Size = new Size(94, 29);
+            buttonQuelle.TabIndex = 7;
+            buttonQuelle.Text = "Quelle";
+            buttonQuelle.UseVisualStyleBackColor = true;
+            buttonQuelle.Click += buttonQuelle_Click;
             // 
             // Startfenster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 320);
+            Controls.Add(buttonQuelle);
+            Controls.Add(checkBoxZufällig);
+            Controls.Add(buttonNächsterText);
             Controls.Add(textBoxZitat);
             Controls.Add(pictureBox1);
             Controls.Add(textBoxName);
@@ -109,5 +145,8 @@
         private TextBox textBoxName;
         private PictureBox pictureBox1;
         private TextBox textBoxZitat;
+        private Button buttonNächsterText;
+        private CheckBox checkBoxZufällig;
+        private Button buttonQuelle;
     }
 }
